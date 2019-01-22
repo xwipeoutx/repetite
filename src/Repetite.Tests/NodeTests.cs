@@ -12,8 +12,6 @@ namespace Repetite.Tests
             var addOneBehaviour = new AddOneBehaviour();
             var node = new Node(addOneBehaviour);
 
-            var defaultValue = addOneBehaviour.Default<int>("Value");
-
             node.Invoking(n => n.TryGetValue("NotAKey", out int notFoundValue))
                 .Should().Throw<KeyNotFoundException>();
         }
