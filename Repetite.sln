@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetite", "src\Repetite\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetite.Tests", "src\Repetite.Tests\Repetite.Tests.csproj", "{93D77D7F-75AC-403E-A960-9B9D29231820}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetite.API", "src\Repetite.API\Repetite.API.csproj", "{EB372AEC-DA95-452D-BF21-2006F9329C6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{93D77D7F-75AC-403E-A960-9B9D29231820}.Release|x64.Build.0 = Release|Any CPU
 		{93D77D7F-75AC-403E-A960-9B9D29231820}.Release|x86.ActiveCfg = Release|Any CPU
 		{93D77D7F-75AC-403E-A960-9B9D29231820}.Release|x86.Build.0 = Release|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Debug|x64.Build.0 = Debug|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Release|x64.Build.0 = Release|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB372AEC-DA95-452D-BF21-2006F9329C6F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -4,6 +4,9 @@ namespace Repetite.Tests
 {
     public class AssertBehaviour : IBehaviour
     {
+        public string Id => "Tests.Assert";
+        public string Name => "Assert";
+
         private readonly Input[] _expectedInputs;
         private IValueBag _inputs;
         public Input[] Inputs => _expectedInputs;

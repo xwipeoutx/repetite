@@ -2,6 +2,7 @@ namespace Repetite
 {
     public enum OutputType
     {
-        Integer
+        Integer,
+        String
     }
 }
