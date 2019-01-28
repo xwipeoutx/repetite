@@ -5,6 +5,9 @@ namespace Repetite.Tests
 {
     public class AddOneBehaviour : IBehaviour
     {
+        public string Id => "Tests.AddOne";
+        public string Name => "AddOne";
+
         public Input[] Inputs => new[]
         {
             DefaultInputs.Int("Value")

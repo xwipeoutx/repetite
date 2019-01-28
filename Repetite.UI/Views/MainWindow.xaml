@@ -1,0 +1,21 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:Repetite.UI.ViewModels;assembly=Repetite.UI"
+        Icon="resm:Repetite.UI.Assets.avalonia-logo.ico"
+        Title="Repetite.UI">
+
+  <Design.DataContext>
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+
+  <StackPanel Orientation="Horizontal">
+
+    <ContentControl Content="{Binding BehaviourList}" />
+
+    <TextBlock Classes="h1" 
+                    DragDrop.AllowDrop="True">
+      Drop here IF YOU CAN
+    </TextBlock>
+  </StackPanel>
+  
+</Window>

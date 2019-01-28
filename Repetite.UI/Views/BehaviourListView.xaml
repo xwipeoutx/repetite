@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <StackPanel Orientation="Vertical" Background="#E5E5E5">
+    <TextBlock Classes="h1">Behaviours</TextBlock>
+    <StackPanel Orientation="Horizontal"
+              Margin="16,16,16,16"
+              HorizontalAlignment="Left">
+      <ItemsControl Items="{Binding Behaviours}">
+        <ItemsControl.ItemTemplate>
+          <DataTemplate>
+            <Button Margin="8,8,8,8" Content="{Binding Name}" Command="{Binding $parent[4].DoThing}" CommandParameter="{Binding Name}"  IsEnabled="true"/>
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+    </StackPanel>
+  </StackPanel>
+</UserControl>

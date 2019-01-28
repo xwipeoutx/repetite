@@ -2,6 +2,9 @@ namespace Repetite.Tests
 {
     public class AddIntBehaviour : IBehaviour
     {
+        public string Id => "Math.AddInt";
+        public string Name => "AddInt";
+
         public Output[] Outputs => new[]
         {
             new Output(OutputType.Integer, "Result")
