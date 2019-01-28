@@ -8,8 +8,8 @@ namespace Repetite.Behaviours.IO
 {
     public class WriteTextFileBehaviour : IBehaviour
     {
-        public string Id => "IO.ReadTextFile";
-        public string Name => "Read Text File";
+        public string Id => "IO.WriteTextFile";
+        public string Name => "Write Text File";
 
         public Input[] Inputs => new[]
         {
