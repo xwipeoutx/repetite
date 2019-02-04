@@ -2,19 +2,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="clr-namespace:Repetite.UI.ViewModels"
              xmlns:local="clr-namespace:Repetite.UI.Views">
-  <StackPanel Orientation="Vertical" Background="#E5E5E5">
-    <TextBlock Classes="h1">Behaviours</TextBlock>
+  <StackPanel Orientation="Horizontal" Background="#E5E5E5">
+    <TextBlock Classes="h1">Le Graph</TextBlock>
     <StackPanel Orientation="Horizontal"
               Margin="16,16,16,16"
               HorizontalAlignment="Left">
 
-      <ItemsControl Items="{Binding Behaviours}">
+      <ItemsControl Items="{Binding Nodes}">
         <ItemsControl.ItemTemplate>
-          <DataTemplate DataType="vm:BehaviourViewModel">
-            <local:BehaviourItemView></local:BehaviourItemView>
+          <DataTemplate DataType="vm:NodeViewModel">
+            <local:NodeView></local:NodeView>
           </DataTemplate>
         </ItemsControl.ItemTemplate>
       </ItemsControl>
+
     </StackPanel>
   </StackPanel>
 </UserControl>

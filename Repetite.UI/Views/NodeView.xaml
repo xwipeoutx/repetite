@@ -1,0 +1,31 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Repetite.UI.ViewModels"
+             xmlns:local="clr-namespace:Repetite.UI.Views">
+  <StackPanel Orientation="Vertical">
+    <Border Padding="8 8 8 8" BorderThickness="2" BorderBrush="Black" Margin="8 8 8 8">
+      <StackPanel Orientation="Horizontal">
+        <Border Padding="8 8 8 8">
+          <StackPanel Orientation="Vertical" Spacing="8">
+            <TextBlock Text="Inputs"></TextBlock>
+
+            <ItemsControl Items="{Binding Inputs}">
+              <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                  <TextBlock >test</TextBlock>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+          </StackPanel>
+        </Border>
+        <TextBlock Text="{Binding Name}"></TextBlock>
+        <Border Padding="8 8 8 8">
+          <StackPanel Orientation="Vertical" Spacing="8">
+            <TextBlock Text="Outputs"></TextBlock>
+          </StackPanel>
+        </Border>
+      </StackPanel>
+    </Border>
+  </StackPanel>
+</UserControl>

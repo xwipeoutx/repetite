@@ -14,7 +14,10 @@
     <EmbeddedResource Include="Assets\*" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Views\BehaviourItemView.xaml" />
     <None Remove="Views\BehaviourListView.xaml" />
+    <None Remove="Views\GraphView.xaml" />
+    <None Remove="Views\NodeView.xaml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.7.0" />
@@ -25,7 +28,24 @@
     <ProjectReference Include="..\src\Repetite\Repetite.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\BehaviourItemView.xaml.cs">
+      <DependentUpon>BehaviourItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NodeView.xaml.cs">
+      <DependentUpon>NodeView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Update="Views\BehaviourListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\BehaviourItemView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NodeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\GraphView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

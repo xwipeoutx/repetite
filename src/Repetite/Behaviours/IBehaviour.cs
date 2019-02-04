@@ -15,6 +15,11 @@ namespace Repetite
 
     public class BehaviourStore 
     {
+        public IBehaviour Get(string id)
+        {
+            return All.First(b => b.Id == id);
+        }
+
         public IBehaviour[] All 
         {
             get

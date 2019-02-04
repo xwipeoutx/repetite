@@ -12,10 +12,12 @@
 
     <ContentControl Content="{Binding BehaviourList}" />
 
-    <TextBlock Classes="h1" 
+    <TextBlock Classes="h1" Name="DropTarget"
                     DragDrop.AllowDrop="True">
       Drop here IF YOU CAN
     </TextBlock>
+
+    <ContentControl Content="{Binding Graph}" />
   </StackPanel>
   
 </Window>

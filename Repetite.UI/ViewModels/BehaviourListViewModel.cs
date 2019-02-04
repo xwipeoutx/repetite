@@ -1,4 +1,5 @@
 ﻿using ReactiveUI;
+using System;
 using System.Collections.ObjectModel;
 
 namespace Repetite.UI.ViewModels
@@ -7,20 +8,13 @@ namespace Repetite.UI.ViewModels
     {
         public BehaviourListViewModel()
         {
-            Behaviours = new Behaviours();
-        }
-
-        public Behaviours Behaviours { get; }
-    }
-
-    class Behaviours : ObservableCollection<IBehaviour>
-    {
-        public Behaviours()
-        {
+            Behaviours = new ObservableCollection<BehaviourViewModel>();
             foreach (var behaviour in new BehaviourStore().All)
             {
-                Add(behaviour);
+                Behaviours.Add(new BehaviourViewModel(behaviour));
             }
         }
+
+        public ObservableCollection<BehaviourViewModel> Behaviours { get; }
     }
 }

@@ -5,9 +5,9 @@ using Repetite.UI.ViewModels;
 
 namespace Repetite.UI.Views
 {
-    class BehaviourListView : UserControl<BehaviourListViewModel>
+    class NodeView : UserControl<NodeViewModel>
     {
-        public BehaviourListView()
+        public NodeView()
         {
             this.InitializeComponent();
         }

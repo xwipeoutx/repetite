@@ -1,13 +1,12 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Repetite.UI.ViewModels;
 
 namespace Repetite.UI.Views
 {
-    class BehaviourListView : UserControl<BehaviourListViewModel>
+    public class GraphView : UserControl
     {
-        public BehaviourListView()
+        public GraphView()
         {
             this.InitializeComponent();
         }

@@ -6,15 +6,15 @@ namespace Repetite
 {
     public class Node
     {
-        private IBehaviour _behaviour;
+        public readonly IBehaviour Behaviour;
         private BasicValueBag _valueBag;
 
         public Node(IBehaviour behaviour)
         {
-            _behaviour = behaviour;
+            Behaviour = behaviour;
             _valueBag = new BasicValueBag();
             
-            foreach (var input in _behaviour.Inputs)
+            foreach (var input in Behaviour.Inputs)
             {
                 _valueBag.Add(input.Name, input.DefaultValue);
             }
@@ -22,13 +22,13 @@ namespace Repetite
 
         public Input Input(string key)
         {
-            return _behaviour.Inputs.FirstOrDefault(i => i.Name == key)
+            return Behaviour.Inputs.FirstOrDefault(i => i.Name == key)
                    ?? throw new KeyNotFoundException();
         }
 
         public Output Output(string key)
         {
-            return _behaviour.Outputs.FirstOrDefault(i => i.Name == key)
+            return Behaviour.Outputs.FirstOrDefault(i => i.Name == key)
                    ?? throw new KeyNotFoundException();
         }
 
@@ -59,7 +59,7 @@ namespace Repetite
         public IValueBag Execute(IValueBag externalValues)
         {
             var compositeBag = new CompositeValueBag(externalValues, _valueBag);
-            return _behaviour.Execute(compositeBag);
+            return Behaviour.Execute(compositeBag);
         }
     }
 }
